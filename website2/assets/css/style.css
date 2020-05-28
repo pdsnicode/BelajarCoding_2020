@@ -1,0 +1,671 @@
+/* ================================== */
+/* =========== CSS Reset ============ */
+/* ================================== */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* ================================== */
+/* ========== Content CSS =========== */
+/* ================================== */
+
+body {
+  background-image: url(../img/what-the-hex.png);
+  font-family: "Roboto", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  width: 100%;
+  margin: auto;
+}
+
+.header {
+  background-color: white;
+  width: 100%;
+  box-sizing: border-box;
+  box-shadow: 0px 10px 15px -5px rgba(0, 0, 0, 0.3);
+  position: fixed;
+
+  -webkit-box-shadow: 0px 10px 15px -5px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 10px 15px -5px rgba(0, 0, 0, 0.3);
+}
+
+.logo {
+  width: 10%;
+  padding: 5px;
+  box-sizing: border-box;
+
+  float: left;
+}
+
+.logo img {
+  width: 100px;
+  height: 40px;
+  margin-left: 5px;
+}
+
+.menu {
+  width: 69%;
+  height: 30px;
+  padding: 5px;
+  margin-top: -4px;
+  box-sizing: border-box;
+  line-height: 30px;
+
+  float: left;
+}
+
+nav {
+  width: 100%;
+  height: 40px;
+  color: #5c5c5c;
+  font-size: 18px;
+  padding: 5px 10px;
+}
+
+nav a {
+  float: left;
+  display: block;
+  color: #5c5c5c;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+  border-bottom: 3px solid white;
+  margin-right: 6px;
+  padding: 5px;
+
+  transition: ease-in-out 0.5s linear;
+  -webkit-transition: ease-in-out 0.5s;
+  -moz-transition: ease-in-out 0.5s;
+}
+
+nav a:hover {
+  border-bottom: 3px solid rgb(209, 36, 36);
+  color: black;
+  border-radius: 0;
+}
+
+nav a.active {
+  background-color: rgb(209, 36, 36);
+  color: white;
+  border-radius: 1em;
+  font-weight: bold;
+}
+
+.profile {
+  width: 20%;
+  height: 42px;
+  padding: 5px 6px;
+  line-height: 40px;
+
+  float: left;
+}
+
+.profile .nama {
+  color: #5c5c5c;
+  width: 80%;
+  text-align: right;
+
+  float: left;
+}
+
+.profile .logo {
+  width: 20%;
+  margin-top: -6px;
+
+  float: left;
+}
+
+.profile img {
+  width: 43px;
+  height: 40px;
+  border-radius: 100%;
+}
+
+.main {
+  margin: auto;
+  margin-top: 4%;
+  width: 100%;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.risk {
+  width: 100%;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.summary-risk {
+  background-color: white;
+  width: 60%;
+  min-height: 200px;
+  padding: 5px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  margin: auto;
+
+  float: left;
+}
+
+.new-risk {
+  background-color: white;
+  width: 39.6%;
+  min-height: 200px;
+  padding: 5px;
+  margin-left: 5px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+
+  float: left;
+}
+
+.waiver {
+  width: 100%;
+  padding: 5px;
+  box-sizing: border-box;
+  margin-top: 5px;
+}
+
+.trend-waiver {
+  background-color: white;
+  width: 100%;
+  padding: 5px;
+  min-height: 200px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+
+  float: left;
+}
+
+.all-waiver {
+  background-color: white;
+  width: 49.8%;
+  padding: 5px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  margin-right: 5px;
+  min-height: 100px;
+
+  float: left;
+}
+
+.new-waiver {
+  background-color: white;
+  width: 49.8%;
+  padding: 5px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  min-height: 100px;
+
+  float: left;
+}
+
+.kotak {
+  background-color: lightgreen;
+  width: 80px;
+  height: 50px;
+}
+
+.table-risk {
+  width: 70%;
+  height: 200px;
+  border: 1px solid #ccc;
+}
+
+.wrap-sr {
+  background-color: red;
+  width: 70%;
+  display: inline-block;
+}
+
+/* .rotasi {
+  background-color: green;
+  width: 90px;
+
+  transform: rotate(270deg);
+  -ms-transform: rotate(270deg); IE 9 */
+/* -moz-transform: rotate(270deg); Firefox */
+/* -webkit-transform: rotate(270deg); Safari and Chrome */
+/* -o-transform: rotate(270deg); Opera */
+/* } */
+
+.footer {
+  width: 100%;
+  height: 40px;
+  padding: 5px;
+  box-sizing: border-box;
+  text-align: center;
+  line-height: 30px;
+
+  position: relative;
+  bottom: 0;
+}
+
+.footer a {
+  color: salmon;
+  text-decoration: none;
+}
+
+.copyright {
+  color: darkgray;
+}
+
+/* ================================== */
+/* ======== Background Color ======== */
+/* ================================== */
+
+.bg-white {
+  background-color: white;
+}
+
+.bg-black {
+  background-color: black;
+}
+
+/* ================================== */
+/* ======== System CSS Grid ========= */
+/* ================================== */
+
+/* ----- System Grid ----- */
+.col-12,
+.col-11,
+.col-10,
+.col-9,
+.col-8,
+.col-7,
+.col-6,
+.col-5,
+.col-4,
+.col-3,
+.col-2,
+.col-1 {
+  float: left;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+.col-11 {
+  width: 91.666667%;
+}
+
+.col-10 {
+  width: 83.33333%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-8 {
+  width: 66.666667%;
+}
+
+.col-7 {
+  width: 58.33333%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-5 {
+  width: 41.666667%;
+}
+
+.col-4 {
+  width: 33.33333%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-2 {
+  width: 16.666667%;
+}
+
+.col-1 {
+  width: 8.33333%;
+}
+
+/* ----- System Grid Half ----- */
+.col-pull-half {
+  margin-right: 4.16666%;
+}
+
+.col-push-half {
+  margin-left: 4.16666%;
+}
+
+/* ================================== */
+/* ====== System Push Element ======= */
+/* ================================== */
+
+.col-push-11 {
+  margin-left: 91.666667%;
+}
+
+.col-push-10 {
+  margin-left: 83.33333%;
+}
+
+.col-push-9 {
+  margin-left: 75%;
+}
+
+.col-push-8 {
+  margin-left: 66.666667%;
+}
+
+.col-push-7 {
+  margin-left: 58.33333%;
+}
+
+.col-push-6 {
+  margin-left: 50%;
+}
+
+.col-push-5 {
+  margin-left: 41.666667%;
+}
+
+.col-push-4 {
+  margin-left: 33.33333%;
+}
+
+.col-push-3 {
+  margin-left: 25%;
+}
+
+.col-push-2 {
+  margin-left: 16.666667%;
+}
+
+.col-push-1 {
+  margin-left: 8.33333%;
+}
+
+/* ================================== */
+/* ========= Extra Feature ==========*/
+/* ================================== */
+.inner-col {
+  margin: 0 2%;
+}
+
+/* ================================== */
+/* ===== Tablet: smaller 1024px ===== */
+/* ================================== */
+@media (max-width: 1024px) {
+  .clear-m-push {
+    margin-left: 0px;
+  }
+
+  /*-- System grid tablet --*/
+  .col-m-12 {
+    width: 100%;
+  }
+
+  .col-m-11 {
+    width: 91.666667%;
+  }
+
+  .col-m-10 {
+    width: 83.33333%;
+  }
+
+  .col-m-9 {
+    width: 75%;
+  }
+
+  .col-m-8 {
+    width: 66.666667%;
+  }
+
+  .col-m-7 {
+    width: 58.33333%;
+  }
+
+  .col-m-6 {
+    width: 50%;
+  }
+
+  .col-m-5 {
+    width: 41.666667%;
+  }
+
+  .col-m-4 {
+    width: 33.33333%;
+  }
+
+  .col-m-3 {
+    width: 25%;
+  }
+
+  .col-m-2 {
+    width: 16.666667%;
+  }
+
+  .col-m-1 {
+    width: 8.33333%;
+  }
+}
+
+/* ================================== */
+/* ===== Tablet: smaller 760px ====== */
+/* ================================== */
+@media (max-width: 760px) {
+  .clear-s-push {
+    margin-left: 0px;
+  }
+
+  /*-- system grid smartphone --*/
+
+  .col-s-12 {
+    width: 100%;
+  }
+
+  .col-s-11 {
+    width: 91.666667%;
+  }
+
+  .col-s-10 {
+    width: 83.33333%;
+  }
+
+  .col-s-9 {
+    width: 75%;
+  }
+
+  .col-s-8 {
+    width: 66.666667%;
+  }
+
+  .col-s-7 {
+    width: 58.33333%;
+  }
+
+  .col-s-6 {
+    width: 50%;
+  }
+
+  .col-s-5 {
+    width: 41.666667%;
+  }
+
+  .col-s-4 {
+    width: 33.33333%;
+  }
+
+  .col-s-3 {
+    width: 25%;
+  }
+
+  .col-s-2 {
+    width: 16.666667%;
+  }
+
+  .col-s-1 {
+    width: 8.33333%;
+  }
+}
+
+/* ================================== */
+/* ======= Clearfix CSS Float ======= */
+/* ================================== */
+
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.clearfix:before,
+.clearfix:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+/**
+  * For IE 6/7 only
+  * Include this rule to trigger hasLayout and contain floats.
+  */
+.clearfix {
+  *zoom: 1;
+}

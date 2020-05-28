@@ -1,0 +1,83 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 98.5%;
+  height: 100%;
+}
+
+header {
+  top: 0;
+  position: fixed;
+  width: 100%;
+  height: 100px;
+  padding: 5px;
+}
+
+.logo {
+  float: left;
+  width: 15%;
+  height: 100px;
+  background-color: blue;
+  padding: 5px;
+}
+
+nav {
+  float: left;
+  background-color: grey;
+  width: 67%;
+  height: 100px;
+  padding: 5px;
+}
+
+.tools {
+  float: left;
+  width: 15%;
+  height: 100px;
+  background-color: blueviolet;
+  padding: 5px;
+}
+
+main {
+  background-color: cyan;
+  width: 100%;
+  min-height: 500px;
+  margin-top: 300px;
+  padding: 10px;
+}
+
+/* article {
+  float: left;
+  background-color: red;
+  width: 78.5%;
+  min-height: 400px;
+  padding: 5px;
+}
+
+aside {
+  float: left;
+  background-color: aqua;
+  width: 19%;
+  min-height: 400px;
+  margin-left: 13.4px;
+  padding: 5px;
+} */
+
+footer {
+  clear: both;
+
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 30px;
+  background-color: red;
+  color: white;
+  text-align: center;
+  padding: 5px;
+}
